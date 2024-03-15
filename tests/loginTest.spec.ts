@@ -1,5 +1,4 @@
-//import  LoginPage  from 'E:/Autimation_testing/Playwright/Practice01/pages/loginPage';
-import {test, expect} from "E:/Autimation_testing/Playwright/Practice01/fixtures/my-fixture"
+import {test, expect} from "../fixtures/my-fixture"
 
 
 test('Vaild Login Test', async ({ page, loginPage }) => {
@@ -9,7 +8,6 @@ test('Vaild Login Test', async ({ page, loginPage }) => {
     await loginPage.clickSubmit();
     console.log(`The user has successfully logged in the ADA app`);
     await page.waitForTimeout(5000);
-    page.close();
   });
 
 

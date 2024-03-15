@@ -1,5 +1,5 @@
 import {test as base} from "@playwright/test"
-import  LoginPage  from "E:/Autimation_testing/Playwright/Practice01/pages/loginPage";
+import  LoginPage  from "../pages/loginPage";
 
 type UIpage = {
     loginPage: LoginPage;
@@ -14,8 +14,6 @@ export const test = base.extend<UIpage>({
   
       // Use the fixture value in the test.
       await use(loginPage);
-
     },
-
   });
   export { expect } from '@playwright/test';
